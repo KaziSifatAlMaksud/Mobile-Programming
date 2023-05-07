@@ -1,0 +1,382 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/textfield"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvEquation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Calculating Result's"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#000000"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:text="&lt;"
+                                android:textColor="@color/white"
+                                android:layout_margin="4dp"
+                                android:background="#222222"
+                                android:textSize="30sp"
+                                android:id="@+id/btnHis1"
+                                android:textAlignment="center" />
+
+
+                            <Button
+                                android:id="@+id/btnHis2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="1"
+                                android:layout_columnWeight="1"
+                                android:layout_margin="4dp"
+                                android:background="#222222"
+                                android:text=">"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"/>
+
+
+                        </GridLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/vsol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="2.2"
+                    android:layout_rowWeight="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:layout_margin="4dp"
+                    android:background="#222222"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:background="#222222"
+                    android:text="delete"
+                    android:id="@+id/btnDel"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"/>
+
+
+            </GridLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="7"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="8"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="9"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="/"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#222222"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="4"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="5"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="6"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnMulti"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="*"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#222222"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="1"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="2"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="3"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="−"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#222222"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnPoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="."
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="0"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#474747"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="="
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#222222"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="+"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="#222222"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
