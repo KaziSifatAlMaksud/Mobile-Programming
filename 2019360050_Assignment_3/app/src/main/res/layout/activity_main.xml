@@ -1,0 +1,196 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2A2A"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contract Form"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic"/>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:id="@+id/Name1"
+            android:backgroundTint="@color/white"
+
+            />
+        <TextView
+            android:id="@+id/agefild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Age"
+            android:layout_below="@id/Name1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:id="@+id/Age"
+            android:layout_below="@id/agefild"
+            android:backgroundTint="@color/white"
+
+            />
+
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageView"
+            android:layout_gravity="right"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-4dp"
+        android:text="Upload" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Email:"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:id="@+id/Mail"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Phone(Home):"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:id="@+id/phone"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Phone(Office):"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:id="@+id/phone1"
+            android:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:id="@+id/cancel"
+            android:textStyle="bold"
+            android:background="@color/white"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:id="@+id/save"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

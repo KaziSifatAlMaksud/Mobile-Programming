@@ -1,0 +1,247 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Contract Form"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#535353" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/Name1"
+            android:backgroundTint="@color/black"
+
+            />
+        <TextView
+            android:id="@+id/agefild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Address"
+            android:layout_below="@id/Name1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/Adress"
+            android:layout_below="@id/agefild"
+            android:backgroundTint="@color/black"
+
+            />
+
+
+        <ImageView
+            android:padding="5px"
+            android:background="#9FFF9800"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageVie"
+            android:layout_gravity="right"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="7dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#FF9800"
+        android:layout_marginTop="-4dp"
+        android:textStyle="bold"
+        android:text="Upload" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Email:"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/Mail"
+            android:backgroundTint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Phone(Home):"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/phone"
+            android:backgroundTint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Phone(Office):"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/phone1"
+            android:backgroundTint="@color/black" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#535353" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Contract List"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#FF9800"
+            android:id="@+id/Cont"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <Button android:layout_gravity="right|center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Delete"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#FF9800"
+            android:id="@+id/Delete"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="right|center"
+            android:layout_weight="1"
+            android:backgroundTint="#FF9800"
+            android:id="@+id/cancel"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <Button android:layout_gravity="right|center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#FF9800"
+            android:id="@+id/save"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
